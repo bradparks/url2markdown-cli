@@ -6,8 +6,10 @@ import sys
 import requests
 import argparse
 
+from setup import __version__
+
 parser = argparse.ArgumentParser(
-                    prog="url2markdown", version="0.1a",
+                    prog="url2markdown", version=__version__,
                     description="Convert website to markdown from an url. "
                                 "This script provided by http://url2markdown.herokuapp.com/")
 parser.add_argument("URL",action="store",
