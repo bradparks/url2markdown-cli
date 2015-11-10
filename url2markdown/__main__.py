@@ -6,7 +6,7 @@ import sys
 import requests
 import argparse
 
-__version__      = "0.1a"
+__version__ = "1.0b"
 
 parser = argparse.ArgumentParser(
                     prog="url2markdown", version=__version__,
