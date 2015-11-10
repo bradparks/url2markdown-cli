@@ -1,29 +1,33 @@
-# url2markdown
+# url2markdown-cli
 
-This is a very simple web service that will take a given URL, and return
-a Markdown representation of that page.
+This script can convert **website** to **markdown** from _URL_.
 
-Powered by [Readability](http://readability.com/), [Requests](http://python-guide.org/), [html2text](http://www.aaronsw.com/2002/html2text/), and [Flask](http://flask.pocoo.org/).
+---
+
+### notice
+
+This script powered by http://url2markdown.herokuapp.com/ from [kennethreitz/url2markdown](https://github.com/kennethreitz/url2markdown)
+
+---
+
 
 ## Usage
 
+```text
+usage: url2markdown [-h] [-v] [-O FILE] URL
 
-    $ curl http://url2markdown.herokuapp.com/?url=http://kennethreitz.org
-    
-    # Hi, there.
-    
-    My name is Kenneth Reitz.
-    ...
+Convert website to markdown from an url.This script provided by
+http://url2markdown.herokuapp.com/
 
-Enjoy!
+positional arguments:
+  URL            An URL of website.
 
-## Configuration
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --version  show program's version number and exit
+  -O FILE        Save markdown to file.
+```
 
-This application requires a [Readability Parser Token](http://www.readability.com/developers/api/parser).
-
-    $ export READABILITY_TOKEN=xxxxxx
-
-You can use [autoenv](https://github.com/kennethreitz/autoenv) to do this easily.
 
 ## License
 
