@@ -16,7 +16,7 @@ if __name__ == "__main__":
         version=__version__,
         description="Convert website to markdown from an url. Powered by http://url2markdown.herokuapp.com/",
         author=__author__,
-        author_email=__author_email_,
+        author_email=__author_email__,
         url="https://github.com/alice1017/url2markdown-cli",
         packages=["url2markdown"],
         include_package_data = True,
