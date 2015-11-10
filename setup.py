@@ -2,12 +2,7 @@
 #coding: utf-8
 
 from setuptools import setup
-
-__original__     = "https://github.com/kennethreitz/url2markdown"
-__author__       = "Hayato Tominaga"
-__author_email__ = "takemehighermore@gmail.com"
-__version__      = "0.1a"
-__license__      = "GPLv3"
+from url2markdown.__main__ import __version__
 
 if __name__ == "__main__":
 
@@ -15,8 +10,8 @@ if __name__ == "__main__":
         name="url2markdown-cli",
         version=__version__,
         description="Convert website to markdown from an url. Powered by http://url2markdown.herokuapp.com/",
-        author=__author__,
-        author_email=__author_email__,
+        author="Hayato Tominaga",
+        author_email="takemehighermore@gmail.com",
         url="https://github.com/alice1017/url2markdown-cli",
         packages=["url2markdown"],
         include_package_data = True,
@@ -33,5 +28,6 @@ if __name__ == "__main__":
             "Programming Language :: Python",
             "Programming Language :: Python :: 2",
             "Programming Language :: Python :: 2.7",
+            "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         ]
     )
