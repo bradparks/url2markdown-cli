@@ -2,7 +2,7 @@
 #coding: utf-8
 
 import unittest
-import url2markdown
+import url2markdown.__main__ as url2markdown
 
 class ArgumentParserTester(unittest.TestCase):
 
