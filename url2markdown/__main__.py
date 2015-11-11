@@ -28,11 +28,13 @@ def convert(url):
 
     res = requests.get(URL,params=param)
 
-    if res.status_code == 200:
-        return res.text
+    body = res.text
+
+    if body == "404 Not Found":
+        raise ConvertError("convert failed")
 
     else:
-        ConvertError("convert failed")
+        return body
 
 
 def main():
